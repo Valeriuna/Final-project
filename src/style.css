@@ -2,7 +2,7 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: 100%;
-  background: url(D:\Final-project\image\fantastic-blue-sky.jpg);
+  background: url(file:///D:/Final-project/image/fantastic-blue-sky.jpg);
 }
 
 .full-page {
