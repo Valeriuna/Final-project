@@ -1,0 +1,167 @@
+.body {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 100%;
+  background: url(file:///C:/Users/valer/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/SheCodes/week8/Final%20project/src/fantastic-blue-sky.jpg);
+}
+
+.full-page {
+  max-width: 900px;
+  background-color: #f3f9ff;
+  height: 100%;
+  margin: 60px auto;
+  font-family: "Radio Canada", sans-serif;
+  padding: 20px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  border-radius: 16px;
+}
+
+.city {
+  font-size: 15px;
+  color: #34495e;
+  text-align: center;
+  padding: 40px 0 20px;
+  font-weight: bold;
+}
+.search {
+  display: block;
+  text-align: center;
+  margin: 0 45px 0 45px;
+  padding: 20px 0px;
+}
+
+.input-city {
+  background: #e4f1fe;
+  border-radius: 8px;
+  width: 400px;
+  padding: 15px 20px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  display: inline-block;
+  border: none;
+  margin: 15px;
+}
+
+.input-button {
+  border-radius: 8px;
+  color: white;
+  background-color: #6aa1c2;
+  width: 100px;
+  padding: 12px 0px;
+  font-size: 16px;
+  height: 50px;
+  border: none;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.input-button:hover {
+  background-color: #e4de97;
+  color: white;
+}
+.location-button:hover {
+  background-color: #8cc0de;
+  color: white;
+}
+
+.location-button {
+  border-radius: 8px;
+  text-align: center;
+  width: 100px;
+  padding: 12px 0px;
+  font-size: 16px;
+  height: 50px;
+  border: none;
+  font-weight: 700;
+  background-color: #faf4b7;
+  color: #34495e;
+}
+
+.currentCity {
+  font-weight: bold;
+  font-size: 60px;
+  font-family: "Radio Canada", sans-serif;
+  color: #34495e;
+}
+
+.units {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Radio Canada", sans-serif;
+  color: #34495e;
+  text-align: left;
+}
+
+#temperature {
+  text-align: right;
+}
+
+.weekDays {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(38 32 65 / 40%);
+  padding: 14px;
+}
+
+.days {
+  text-align: center;
+  font-size: 24px;
+  color: #34495e;
+}
+
+.my-city {
+  margin: 0px 100px;
+  text-align: center;
+}
+
+.temp {
+  text-align: center;
+  color: #6aa1c2;
+  font-size: 22px;
+}
+
+.win-hum {
+  font-size: 22px;
+  color: rgb(38 32 65 / 40%);
+  position: relative;
+  right: 0px;
+  top: 15px;
+  margin: 0px 30px 0px 90px;
+  padding: 10px 90px;
+  list-style: none;
+  text-align: center;
+}
+
+.week-weather {
+  margin: 20px 0px 20px 0px;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  color: grey;
+  padding: 10px 0 0;
+  margin: 10px 0 0;
+}
+
+.units .active {
+  color: #34495e;
+  text-decoration: none;
+  cursor: default;
+}
+
+#fahrenheit {
+  text-decoration: none;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
+.units a {
+  text-decoration: none;
+}
