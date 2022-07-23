@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css"/>
+    <link rel="stylesheet" href="src/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,83 +16,106 @@
   </head>
   <body class="body">
     <div class="full-page">
-    <div class="container">
-      
-      <div class="city">
-      <div class="row">
-        <div class="col">London</div>
+      <div class="container">
+       
+          <div class="city">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm mr-2"
+              id="quick-search_kyiv"
+            >
+              Kyiv
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm mr-2"
+              id="quick-search_london"
+            >
+              London
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm mr-2"
+              id="quick-search_NewYork"
+            >
+              New York
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm mr-2"
+              id="quick-search_Paris"
+            >
+              Paris
+            </button>
 
-        <div class="col">New York</div>
+            </div>
+          
 
-        <div class="col">Paris</div>
+          <div class="search">
+            <form class="form" id="search-form">
+              🔎<input
+                type="text"
+                class="input-city"
+                id="search-city"
+                placeholder="Enter a city"
+              />
 
-        <div class="col">Wienna</div>
+              <input class="input-button" type="submit" value="Search" />
+
+              <input
+                id="current-location"
+                class="location-button"
+                type="submit"
+                value="📍Current"
+              />
+            </form>
+          </div>
+          <h2 class="weekDays" id="current-time"></h2>
+
+          <div class="my-city">
+            <div class="row">
+              <div class="col">
+                <img src="" alt="Clear" id="icon" class="currentCity" />
+              </div>
+              <div class="col">
+                <h1 class="currentCity" id="cityName">Kiev</h1>
+              </div>
+
+              <div class="col">
+                <h1 class="currentCity" id="temperature">+29</h1>
+              </div>
+
+              <div class="col">
+                <h1 class="units">
+                  <a href="#" id="celcium" class="active">℃</a> |
+                  <a href="#" id="fahrenheit">°F</a>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <ul class="win-hum">
+            <li id="wind-speed"></li>
+            <li id="humidity"></li>
+          </ul>
+
+          <div class="week-weather" id="forecast"></div>
+        </div>
       </div>
-      </div>
-
-      <div class="search">
-        <form class="form" id="search-form">
-
-          🔎<input type="text" class="input-city" id="search-city" placeholder="Enter a city" />
-
-          <input class="input-button" type="submit" value="Search" />
-
-          <input
-            id="current-location"
-            class="location-button"
-            type="submit"
-            value="📍Current"
-          />
-        </form>
-      </div>
-      <h2 class="weekDays" id="current-time"></h2>
-
-      <div class="my-city">
-      <div class="row">
-      <div class="col">
-        <img src="" alt="Clear" id="icon" class="currentCity" />
-      </div>
-      <div class="col">
-        <h1 class="currentCity" id="cityName">Kiev</h1>
-      </div>
-
-      <div class="col">
-        <h1 class="currentCity" id="temperature">+29</h1>
-      </div>
-
-      <div class="col">
-        <h1 class="units">
-            <a href="#" id="celcium" class="active">℃</a> |
-            <a href="#" id="fahrenheit">°F</a>
-        </h1>
-      </div>
-
-      </div>
-
-      
-      </div>
-
-      <ul class="win-hum">
-        <li id="wind-speed"></li>
-        <li id="humidity"></li>
-      </ul>
-
-     
-      <div class="week-weather" id="forecast">
-      
-    </div>
-    </div>
-
-    </div>
       <small>
         <p class="footer">
-        <a href="https://github.com/Valeriuna/Weather-Forecast" target="_blank"  class="GitHub">
-         Open-source code</a>
-         by Valeriia Kovalenko
-         </p>
+          <a
+            href="https://github.com/Valeriuna/Weather-Forecast"
+            target="_blank"
+            class="GitHub"
+          >
+            Open-source code</a
+          >
+          by Valeriia Kovalenko
+        </p>
       </small>
     </div>
-   
-     <script src="src/java.js"></script>
+
+    <script src="src/java.js"></script>
   </body>
 </html>

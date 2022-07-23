@@ -17,12 +17,29 @@
 }
 
 .city {
-  font-size: 15px;
-  color: #34495e;
   text-align: center;
-  padding: 40px 0 20px;
-  font-weight: bold;
 }
+
+#quick-search_kyiv,
+#quick-search_london,
+#quick-search_NewYork,
+#quick-search_Paris {
+  margin: 10px 70px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #34495e;
+  border-color: #f3f9ff;
+}
+
+#quick-search_kyiv:hover,
+#quick-search_london:hover,
+#quick-search_NewYork:hover,
+#quick-search_Paris:hover {
+  color: #fff;
+  background-color: #8cc0de;
+  border-color: #f3f9ff;
+}
+
 .search {
   display: block;
   text-align: center;

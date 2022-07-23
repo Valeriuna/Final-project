@@ -157,7 +157,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index < 6) {
       forecastHTML =
         forecastHTML +
         `  
@@ -168,9 +168,9 @@ function displayForecast(response) {
               }@2x.png" alt="" width="40">
               <div class="temp">
               <span class="max-temp">
-                ${Math.round(forecastDay.temp.max)}°C | </span>
+                ${Math.round(forecastDay.temp.max)}° | </span>
               <span class="min-temp">
-                ${Math.round(forecastDay.temp.min)}°C </span>
+                ${Math.round(forecastDay.temp.min)}° </span>
               </div>
             </div>
             
@@ -182,3 +182,83 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 }
+
+//Quick Search Kyiv
+
+function doQuickSearchKyiv(event) {
+  event.preventDefault();
+  let quickSearchBtn = document.querySelector("#quick-search_kyiv");
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = `${quickSearchBtn.innerHTML}`;
+  let searchInput = document.querySelector(".input-city");
+  searchInput.value = `${quickSearchBtn.innerHTML}`;
+  searchInput.value = searchInput.value.trim();
+  let apiKey = "5c5db0dc3239cb6542e1902d9da964f5";
+  let city = searchInput.value.trim();
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+let quickSearchKyiv = document.querySelector("#quick-search_kyiv");
+quickSearchKyiv.addEventListener("click", doQuickSearchKyiv);
+
+//Quick Search London
+
+function doQuickSearchLondon(event) {
+  event.preventDefault();
+  let quickSearchBtn = document.querySelector("#quick-search_london");
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = `${quickSearchBtn.innerHTML}`;
+  let searchInput = document.querySelector(".input-city");
+  searchInput.value = `${quickSearchBtn.innerHTML}`;
+  searchInput.value = searchInput.value.trim();
+  let apiKey = "5c5db0dc3239cb6542e1902d9da964f5";
+  let city = searchInput.value.trim();
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+let quickSearchLondon = document.querySelector("#quick-search_london");
+quickSearchLondon.addEventListener("click", doQuickSearchLondon);
+
+//Quick Search New York
+
+function doQuickSearchNewYork(event) {
+  event.preventDefault();
+  let quickSearchBtn = document.querySelector("#quick-search_NewYork");
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = `${quickSearchBtn.innerHTML}`;
+  let searchInput = document.querySelector(".input-city");
+  searchInput.value = `${quickSearchBtn.innerHTML}`;
+  searchInput.value = searchInput.value.trim();
+  let apiKey = "5c5db0dc3239cb6542e1902d9da964f5";
+  let city = searchInput.value.trim();
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+let quickSearchNewYork = document.querySelector("#quick-search_NewYork");
+quickSearchNewYork.addEventListener("click", doQuickSearchNewYork);
+
+//Quick Search Paris
+
+function doQuickSearchParis(event) {
+  event.preventDefault();
+  let quickSearchBtn = document.querySelector("#quick-search_Paris");
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = `${quickSearchBtn.innerHTML}`;
+  let searchInput = document.querySelector(".input-city");
+  searchInput.value = `${quickSearchBtn.innerHTML}`;
+  searchInput.value = searchInput.value.trim();
+  let apiKey = "5c5db0dc3239cb6542e1902d9da964f5";
+  let city = searchInput.value.trim();
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+let quickSearchParis = document.querySelector("#quick-search_Paris");
+quickSearchParis.addEventListener("click", doQuickSearchParis);
