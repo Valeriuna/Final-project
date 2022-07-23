@@ -151,6 +151,31 @@ function formatDay(timestamp) {
   return days[day];
 }
 
+function showWeatherIcon(iconNumber) {
+  let weatherIconDictionary = {
+    "01d": "01d.svg",
+    "02d": "02d.svg",
+    "03d": "03d.svg",
+    "04d": "04.svg",
+    "09d": "09d.svg",
+    "10d": "10d.svg",
+    "11d": "11.svg",
+    "13d": "12.svg",
+    "50d": "51.png",
+    "01n": "01n.svg",
+    "02n": "02n.svg",
+    "03n": "03n.svg",
+    "04n": "04.svg",
+    "09n": "09n.svg",
+    "10n": "10n.svg",
+    "11n": "11.svg",
+    "13n": "12.svg",
+    "50n": "51.png",
+  };
+  let weatherIcon = weatherIconDictionary[iconNumber];
+  return weatherIcon;
+}
+
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -163,9 +188,9 @@ function displayForecast(response) {
         `  
             <div class="col">
               <div class="days">${formatDay(forecastDay.dt)}</div>
-              <img src="http://openweathermap.org/img/wn/${
+              <img src="icons/${showWeatherIcon(
                 forecastDay.weather[0].icon
-              }@2x.png" alt="" width="40">
+              )}" alt="" width="80">
               <div class="temp">
               <span class="max-temp">
                 ${Math.round(forecastDay.temp.max)}° | </span>
