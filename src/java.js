@@ -132,3 +132,28 @@ function convertToCelsius(event) {
 }
 let celsiusLink = document.querySelector("#celcium");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+///
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["MON", "TUE", "WED", "THU", "FRI"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `  
+            <div class="col">
+              <div class="days">${day}</div>
+              <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" width="40">
+              <div class="temp">19°C | 6°C</div>
+            </div>
+            
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+displayForecast();
