@@ -39,6 +39,22 @@
   background-color: #8cc0de;
   border-color: #f3f9ff;
 }
+#icon {
+  width: 250px;
+}
+
+#cityName {
+  padding-top: 90px;
+}
+
+#temperature {
+  padding-top: 90px;
+  text-align: right;
+}
+
+#celcium {
+  padding-top: 90px;
+}
 
 .search {
   display: block;
@@ -109,10 +125,7 @@
   font-family: "Radio Canada", sans-serif;
   color: #34495e;
   text-align: left;
-}
-
-#temperature {
-  text-align: right;
+  padding-top: 90px;
 }
 
 .weekDays {
@@ -129,7 +142,6 @@
 }
 
 .my-city {
-  margin: 0px 100px;
   text-align: center;
 }
 
